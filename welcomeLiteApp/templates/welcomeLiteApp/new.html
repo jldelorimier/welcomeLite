@@ -1,0 +1,7 @@
+<!-- display for a new record# -->
+<form method="POST" action="{% url 'new' %}" >
+  <!-- prevents crossscript forgery -->
+  {%  csrf_token %}
+  {{ offer  }}
+  <input  type="submit" value="submit">
+</form>
